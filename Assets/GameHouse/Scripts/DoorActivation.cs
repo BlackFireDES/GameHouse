@@ -10,12 +10,12 @@ public class DoorActivation : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        _animator.SetBool("isOpen", collision.GetComponent<ThiefMovement>());
+        _animator.SetBool(AnimatorDoor.isOpen, collision.GetComponent<ThiefMovement>());
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        _animator.SetBool("isOpen", collision.GetComponent<ThiefMovement>() == false);
+        _animator.SetBool(AnimatorDoor.isOpen, collision.GetComponent<ThiefMovement>() == false);
     }
     
 }

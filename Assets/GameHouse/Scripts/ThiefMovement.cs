@@ -46,7 +46,7 @@ public class ThiefMovement : MonoBehaviour
             }
 
             if (collision.GetComponent<DoorActivation>())
-                StartCoroutine(Sleep().GetEnumerator());
+                StartCoroutine(Sleep());
         }
     }
 
@@ -60,7 +60,7 @@ public class ThiefMovement : MonoBehaviour
         _speed = _maxSpeed;
     }
 
-    private IEnumerable Sleep()
+    private IEnumerator Sleep()
     {
         Stay();
         _spriteRenderer.enabled = false;

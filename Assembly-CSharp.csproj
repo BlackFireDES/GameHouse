@@ -63,6 +63,7 @@
     <Compile Include="Assets\GameHouse\Scripts\Point.cs" />
     <Compile Include="Assets\GameHouse\Scripts\ThiefMovement.cs" />
     <Compile Include="Assets\GameHouse\Scripts\Signaling.cs" />
+    <Compile Include="Assets\GameHouse\Animations\AnimatorDoor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
